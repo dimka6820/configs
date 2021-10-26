@@ -1,6 +1,6 @@
 catalogToFilters:
   people:
-    - filterId: "config"
+    - filterId: "configNew"
       title: "Dmma"
       enabled: true
       sorting: "numericDesc"
