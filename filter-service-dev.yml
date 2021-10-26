@@ -1,0 +1,68 @@
+catalogToFilters:
+  people:
+    - filterId: "config"
+      title: "Dmma"
+      enabled: true
+      sorting: "numericDesc"
+      visibility: "open"
+      order: 5
+    - filterId: "country.keyword"
+      title: "Country"
+      enabled: true
+      sorting: "numericDesc"
+      visibility: "open"
+      order: 10
+    - filterId: "city"
+      title: "City"
+      enabled: true
+      sorting: "numericDesc"
+      visibility: "open"
+      order: 20
+    - filterId: "org_cat"
+      title: "Organizational Category"
+      enabled: true
+      sorting: "alphabetAsc"
+      visibility: "closed"
+      order: 30
+    - filterId: "title.keyword"
+      title: "Title"
+      enabled: true
+      sorting: "alphabetAsc"
+      visibility: "open"
+      order: 30
+      additionalQueries:
+        - field: "manager.keyword"
+          value: "Manager Joe"
+    - filterId: "filterWithPredefinedValues"
+      title: "Predefined Values"
+      enabled: true
+      sorting: "alphabetAsc"
+      visibility: "open"
+      order: 30
+      valueToQuery:
+        "id1":
+          field: "peopleId"
+          value: "id1"
+        "id2":
+          field: "peopleId"
+          value: "id2"
+        "id3":
+          field: "peopleId"
+          value: "id3"
+    - filterId: "startWorkYear"
+      title: "Predefined Values"
+      enabled: true
+      sorting: "alphabetAsc"
+      visibility: "open"
+      order: 30
+      valueToQuery:
+        "2020":
+          field: "startWorkDate"
+          range:
+            gt: "2020-01-01"
+            lt: "2020-12-31"
+        "2021":
+          field: "startWorkDate"
+          range:
+            gt: "2021-01-01"
+            lt: "2021-12-31"
